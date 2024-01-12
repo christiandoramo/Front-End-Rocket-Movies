@@ -15,7 +15,7 @@ export const Container = styled.div`
     padding: 0 124px;
 
     svg {
-      color: ${({ theme }) => theme.COLORS.GRAY_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_MEDIUM};
       font-size: 24px;
     }
   }
@@ -47,7 +47,7 @@ export const Avatar = styled.div`
     width: 48px;
     height: 48px;
 
-    background-color: ${({ theme }) => theme.COLORS.ORANGE};
+    background-color: ${({ theme }) => theme.COLORS.GRAY_DARK};
     border-radius: 50%;
 
     display: flex;

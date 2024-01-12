@@ -35,7 +35,7 @@ export const Form = styled.form`
 
     a {
       font-size: 20px;
-      color: ${({ theme }) => theme.COLORS.GRAY_100}
+      color: ${({ theme }) => theme.COLORS.GRAY_MEDIUM}
     }
   }
 `

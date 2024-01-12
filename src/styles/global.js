@@ -5,6 +5,9 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ${'' /* funciona no firefox */}
+    scrollbar-width: thin;
+    scrollbar-color: ${({ theme }) => theme.COLORS.GRAY_DARK};
   }
 
   body {
@@ -32,4 +35,20 @@ export default createGlobalStyle`
   button:hover, a:hover {
     filter: brightness(0.9);
   }
+
+/* Funciona no Chrome, Edge e Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  ${'' /* background: orange; */}
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: ${({ theme }) =>  theme.COLORS.GRAY_DARK};
+  border-radius: 20px;
+  ${'' /* border: 3px solid orange; */}
+}
+
 `

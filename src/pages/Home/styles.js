@@ -3,66 +3,34 @@ import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
-
-  display: grid;
-  grid-template-columns: 250px auto;
-  grid-template-rows: 105px 128px auto 64px;
-  grid-template-areas: 
-  "brand header"
-  "menu search"
-  "menu content"
-  "createnote content";
-
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-`
-export const Brand = styled.div`
-  grid-area: brand;
+  height: 100dvh;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
-  > h1 {
-    font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
-  }
+  flex-direction: column;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
-export const Menu = styled.ul`
-  grid-area: menu;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
-  padding-top: 64px;
-  text-align: center;
 
-  > li {
-    margin-bottom: 24px;
-  }
-`
-export const Search = styled.div`
-  grid-area: search;
-  padding: 64px 64px 0;
-`
+
 export const Content = styled.div`
-  grid-area: content;
-  padding: 0 64px;
+  ${'' /* padding: 0 64px; */}
   overflow-y: auto;
+  max-height:500px;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  ${'' /* theme.COLORS.GRAY_DARK}; */}
 `
 export const CreateNote = styled(Link)`
-  grid-area: createnote;
-
-  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  background-color: ${({ theme }) => theme.COLORS.GRAY_DARK};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 13.5px 32px;
+  border-radius: 8px;
 
   svg {
     margin-right: 8px;

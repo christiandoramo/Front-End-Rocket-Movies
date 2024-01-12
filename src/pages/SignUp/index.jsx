@@ -5,18 +5,20 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 import { Container, Form, Background } from './styles'
+import { PiArrowLeftBold } from "react-icons/pi";
 
 export function SignUp() {
   return (
     <Container>
-      <Background />
+
 
       <Form>
-        <h1>Rocket Notes</h1>
-        <p>Aplicação para salvar e gerenciar seus links úteis.</p>
+        <div>
+          <h1>RocketMovies</h1>
+          <p>Aplicação para acompanhar tudo que assistir.</p>
 
-        <h2>Crie sua conta</h2>
-
+          <h2>Crie sua conta</h2>
+        </div>
         <Input
           placeholder="Nome"
           type="text"
@@ -37,9 +39,9 @@ export function SignUp() {
 
         <Button title="Cadastrar" />
 
-        <Link to="/">Voltar para o login</Link>
+        <Link to="/"><PiArrowLeftBold size={24} /><span>Voltar para o login</span></Link>
       </Form>
-
+      <Background />
     </Container>
   )
 }

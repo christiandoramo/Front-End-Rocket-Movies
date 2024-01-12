@@ -17,12 +17,12 @@ export function CreateNote() {
       <main>
         <Form>
           <header>
-            <h1>Criar nota</h1>
+            <h1>Criar nova nota</h1>
             <Link to="/">voltar</Link>
           </header>
 
           <Input placeholder="Título" />
-          <Textarea placeholder="Observações" />
+          <Textarea placeholder="Descrição" />
 
           <Section title="Links úteis">
             <NoteItem value="https://rocketseat.com.br" />

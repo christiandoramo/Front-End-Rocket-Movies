@@ -16,26 +16,38 @@ export const Form = styled.form`
   align-items: center;
 
   text-align: center;
-
-  > h1 {
+  >div{
+    text-align: left;
+    > h1 {
     font-size: 48px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.GRAY_DARK};
   }
 
   > h2 {
     font-size: 24px;
     margin: 48px 0;
+    
   }
 
   > p {
     font-size: 14px;
-    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    color: ${({ theme }) => theme.COLORS.GRAY_MEDIUM};
+  }
+
   }
 
   > a {
-    margin-top: 124px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    margin-top: 42px;
+    display: flex;
+    color: ${({ theme }) => theme.COLORS.GRAY_DARK};
+    justify-content: center;
+    gap: 8px;
+    align-self: center;
+    >span{
+      display: block;
+    }
   }
+
 `
 
 export const Background = styled.div`
