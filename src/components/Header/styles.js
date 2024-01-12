@@ -26,6 +26,7 @@ export const Profile = styled.div`
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    cursor: pointer;
   }
 
 
@@ -39,11 +40,13 @@ export const Profile = styled.div`
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_LIGHT};
       text-align:right;
+      cursor: pointer;
     }
 
     strong {
       font-size: 18px;
       color: ${({ theme }) => theme.COLORS.WHITE};
+      cursor: pointer;
     }
   }
 `
