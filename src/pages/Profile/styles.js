@@ -4,19 +4,23 @@ export const Container = styled.div`
   width: 100%;
 
   > header {
+    padding: 63px 128px 63px;
     width: 100%;
-    height: 144px;
 
     background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
     display: flex;
     align-items: center;
 
-    padding: 0 124px;
-
-    svg {
-      color: ${({ theme }) => theme.COLORS.GRAY_MEDIUM};
-      font-size: 24px;
+    > a {
+    display: flex;
+    color: ${({ theme }) => theme.COLORS.GRAY_DARK};
+    justify-content: center;
+    gap: 8px;
+    align-self: center;
+    >span {
+      display: block;
+      }
     }
   }
 `
@@ -25,7 +29,16 @@ export const Form = styled.form`
   max-width: 340px;
   margin: 30px auto 0;
 
+  > div:nth-child(3) {
+    margin-top: 8px;
+  }
   > div:nth-child(4) {
+    margin-top: 24px;
+  }
+  > div:nth-child(5) {
+    margin-top: 8px;
+  }
+  > button{
     margin-top: 24px;
   }
 `

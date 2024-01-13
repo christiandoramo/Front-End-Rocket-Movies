@@ -1,19 +1,13 @@
 import styled from 'styled-components'
 
+
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
 
-  display: grid;
-  grid-template-rows: 105px auto;
-  grid-template-areas: 
-  "header"
-  "content";
-
   > main {
-    grid-area: content;
     overflow-y: scroll;
-    padding: 64px 0;
+    margin: 0 123px;
   }
 `
 
@@ -30,25 +24,27 @@ export const Links = styled.ul`
 `
 
 export const Content = styled.div`
-  max-width: 550px;
-  margin: 0 auto;
-
+  overflow-y: auto;
+  max-height: 500px;
   display: flex;
+  gap: 25px;
   flex-direction: column;
+  margin: 40px 0;
+  padding: 0 10px;
 
-  > button:first-child {
-    align-self: end;
-  }    
+  > header {
+    width: 100%;
 
-  > h1 {
-    font-size: 36px;
-    font-weight: 500;
-    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > a {
+    display: flex;
+    color: ${({ theme }) => theme.COLORS.GRAY_DARK};
+    align-self: center;
+    >span {
+      display: block;
+      }
+    }
   }
-
-  > p {
-    font-size: 16px;
-    margin-top: 16px;
-    text-align: justify;
-  }
-`
+ `

@@ -10,9 +10,7 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <Link to="/">
-          <FiArrowLeft />
-        </Link>
+        <Link to="/"><FiArrowLeft size={23} /><span>Voltar</span></Link>
       </header>
 
       <Form>

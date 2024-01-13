@@ -1,7 +1,15 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  >div{
+    >h1{
+      color: ${({theme}) => theme.COLORS.GRAY};
+      font-family: 'Roboto Slab';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    >div{
     display:flex;
     justify-content:space-between;
     align-items:center;

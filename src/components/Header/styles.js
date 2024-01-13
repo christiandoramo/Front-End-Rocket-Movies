@@ -5,17 +5,15 @@ export const Container = styled.header`
 
   height: 105px;
   width: 100%;
-
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
   display: flex;
   padding: 24px 123px;
   align-items: center;
   gap: 64px;
+  
 `
-
 
 export const Profile = styled.div`
   display: flex;

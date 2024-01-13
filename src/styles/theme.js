@@ -12,6 +12,8 @@ export default {
     GRAY_LIGHT: "#948F99",
     GRAY: "#999591",
     DARK_GREEN_BLUE: '#312E38',
-    WHITE_GREY: '#E5E5E5'
+    WHITE_GREY: '#E5E5E5',
+    WHITE_SHINY: '#F4EDE8',
+    SUPER_BLACK: '#0D0C0F',
   }
 }
